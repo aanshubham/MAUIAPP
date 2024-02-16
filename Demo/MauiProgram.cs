@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Demo.ViewModel;
+using Microsoft.Extensions.Logging;
 
 namespace Demo
 {
@@ -15,9 +16,11 @@ namespace Demo
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-#if DEBUG
-    		builder.Logging.AddDebug();
-#endif
+            builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<MainViewModel>();
+
+            builder.Services.AddTransient<DetailPage>();
+            builder.Services.AddTransient<DetailViewModel>();
 
             return builder.Build();
         }

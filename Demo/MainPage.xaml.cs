@@ -1,15 +1,14 @@
-﻿namespace Demo
+﻿using Demo.ViewModel;
+namespace Demo;
+
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+    public MainPage(MainViewModel vm)
     {
-        int count = 0;
-
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-
+        InitializeComponent();
+        BindingContext = vm;
     }
-
 }
-        
+
+
+
