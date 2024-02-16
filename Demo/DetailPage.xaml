@@ -19,7 +19,7 @@
             Text="Update"
             Command="{Binding AddCommand}"
             TextColor="Black"
-            Background="BlueViolet"
+            Background="Transparent"
             Grid.Row="1"
             Grid.Column="1"></Button>
     </VerticalStackLayout>
