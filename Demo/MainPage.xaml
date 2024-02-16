@@ -23,7 +23,7 @@
                Grid.Row="1"></Entry>
         
         <!--Add button task to list-->
-        <Button Text="+ Add"
+        <Button Text="+Add"
                 Command="{Binding AddCommand}"
                 TextColor="Black"
                 Background="Red"
