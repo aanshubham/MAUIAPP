@@ -4,7 +4,8 @@
              x:Class="Demo.DetailPage"
              xmlns:viewmodel="clr-namespace:Demo.ViewModel"
              x:DataType="viewmodel:DetailViewModel"
-             Title="DetailPage">
+             Title="Detail Page"
+             BackgroundColor="Transparent">
     <VerticalStackLayout Padding="10">
         <Label 
             Text="{Binding Text}"
@@ -17,7 +18,7 @@
             Grid.Row="1"></Entry>
         <Button 
             Text="Update"
-            Command="{Binding AddCommand}"
+            Command="{Binding .}"
             TextColor="Black"
             Background="BlueViolet"
             Grid.Row="1"
